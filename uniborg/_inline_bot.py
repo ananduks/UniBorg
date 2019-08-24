@@ -70,7 +70,7 @@ if Config.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
             buttons = paginate_help(0, borg._plugins, "helpme")
             result = builder.article(
                 "© @UniBorg There is only a legend its this man @anandus",
-                text="{}\nCurrently Loaded Plugins: {}".format(
+                text="{}\n🧡🧡ANANDUS🧡🧡: {}".format(
                     query, len(borg._plugins)),
                 buttons=buttons,
                 link_preview=False
