@@ -70,7 +70,7 @@ if Config.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
             buttons = paginate_help(0, borg._plugins, "helpme")
             result = builder.article(
                 "© @UniBorg There is only a legend its this man @anandus",
-                text="{}\n🧡🧡ANANDUS🧡🧡: {}".format(
+                text="{}\nThere is only one legend thats me 😂😂🤣🤣 🧡🧡ANANDUS🧡🧡: {}".format(
                     query, len(borg._plugins)),
                 buttons=buttons,
                 link_preview=False
@@ -263,7 +263,7 @@ def paginate_help(page_number, loaded_plugins, prefix):
             helpable_plugins.append(p)
     helpable_plugins = sorted(helpable_plugins)
     modules = [custom.Button.inline(
-        "{} {}".format("✅", x),
+        "{} {}".format("🖤🧡", x),
         data="ub_plugin_{}".format(x))
         for x in helpable_plugins]
     pairs = list(zip(modules[::number_of_cols], modules[1::number_of_cols]))
