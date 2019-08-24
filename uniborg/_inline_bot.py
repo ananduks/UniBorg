@@ -265,7 +265,7 @@ if Config.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
 def paginate_help(page_number, loaded_plugins, prefix):
     number_of_rows = Config.NO_OF_BUTTONS_DISPLAYED_IN_H_ME_CMD
     number_of_cols = 2
-    multi = "❤️💚💛🧡💔💕💜🖤💖💝💗💙💟❣️💤💢🏵️💮🌼🌸🌺🍁🌀❄️🔥"
+    multi = "❤️🧡💚💛🧡🖤⚕️☢️☣️💖🧡⚕️💝🛡️🧡🏵️⚕️💮🌼🌸🧡🌺🍁🌀❄️🧡🔥⚙️"
     helpable_plugins = []
     for p in loaded_plugins:
         if not p.startswith("_"):
@@ -283,7 +283,7 @@ def paginate_help(page_number, loaded_plugins, prefix):
     if len(pairs) > number_of_rows:
         pairs = pairs[modulo_page * number_of_rows:number_of_rows * (modulo_page + 1)] + \
             [
-            (custom.Button.inline("⏪", data="{}_prev({})".format(prefix, modulo_page)),
-             custom.Button.inline("⏩", data="{}_next({})".format(prefix, modulo_page)))
+            (custom.Button.inline("🔥", data="{}_prev({})".format(prefix, modulo_page)),
+             custom.Button.inline("⚕️", data="{}_next({})".format(prefix, modulo_page)))
         ]
     return pairs
